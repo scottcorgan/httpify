@@ -1,6 +1,6 @@
 # httpify
- 
-Simple wrapper around the [request](https://www.npmjs.org/package/request) module using [reqwest](https://www.npmjs.org/package/reqwest) for use in Browserify and Node.
+
+Http in Node and Browserify, simply.
  
 ## Install
  

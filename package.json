@@ -1,7 +1,7 @@
 {
   "name": "httpify",
-  "version": "0.2.2",
-  "description": "A Browserify, Angular bridge for the Request NPM module",
+  "version": "0.2.3",
+  "description": "Http in Node and Browserify, simply.",
   "main": "index.js",
   "scripts": {
     "test": "node_modules/.bin/testling | node_modules/.bin/tspec",
