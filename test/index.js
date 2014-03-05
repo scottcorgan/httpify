@@ -1,3 +1,3 @@
-var httpify = require('../index.js');
-var test = require('tape');
+var request = require('../angular');
 
+console.log(request);
