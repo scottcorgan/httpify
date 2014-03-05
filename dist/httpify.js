@@ -3,6 +3,9 @@ module.exports = require('request');
 },{"request":2}],2:[function(require,module,exports){
 var request = require('reqwest');
 
+// Wrapper to make the features more similiar between
+// request and reqwest
+
 module.exports = function (options, callback) {
   try{
     if (options.body) options.data = JSON.parse(options.body);

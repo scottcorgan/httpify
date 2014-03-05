@@ -1,6 +1,6 @@
 # httpify
  
-An Browserify, Angular bridge for the Request NPM module
+Simple wrapper around the [request](https://www.npmjs.org/package/request) module using [reqwest](https://www.npmjs.org/package/reqwest) for use in Browserify and Node.
  
 ## Install
  
@@ -11,8 +11,6 @@ npm install httpify --save
 ## Usage
 
 When using with Browserify, this module returns a shimmed version of the [reqwest](https://www.npmjs.org/package/reqwest) module. When using with Node, it returns the raw [request](https://www.npmjs.org/package/request) module.
-
-Uses callbacks and promise.
 
 ```js
 var httpify = require('httpify');
