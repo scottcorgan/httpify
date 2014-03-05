@@ -1,0 +1,54 @@
+{
+  "name": "httpify",
+  "version": "0.1.0",
+  "description": "A Browserify, Angular bridge for the Request NPM module",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/testling | node_modules/.bin/tspec",
+    "build": "./build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scottcorgan/httpify.git"
+  },
+  "keywords": [
+    "$http",
+    "browserify",
+    "angular",
+    "request"
+  ],
+  "author": "Scott Corgan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/scottcorgan/httpify/issues"
+  },
+  "devDependencies": {
+    "tape": "~2.3.2",
+    "testling": "~1.5.6",
+    "tap-spec": "~0.1.3",
+    "browserify": "^3.32.0",
+    "uglify-js": "~2.4.9"
+  },
+  "testling": {
+    "files": [
+      "test/index.js"
+    ],
+    "browsers": [
+      "iexplore/10.0",
+      "iexplore/9.0",
+      "iexplore/8.0",
+      "firefox/16..latest",
+      "chrome/22..latest",
+      "safari/5.1..latest",
+      "ipad/6.0..latest",
+      "iphone/6.0..latest",
+      "android-browser/4.2..latest"
+    ]
+  },
+  "browser": {
+    "request": "./lib/browser_http.js"
+  },
+  "dependencies": {
+    "reqwest": "^1.1.0"
+  }
+}
