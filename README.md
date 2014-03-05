@@ -29,3 +29,8 @@ req.then(function (response) {
 ```
 
 See the documentation for [reqwest](https://www.npmjs.org/package/reqwest) and [request](https://www.npmjs.org/package/request) for a complete list of options.
+
+## TODO
+
+* add support for Angular
+* add more robust Browserify bundle/transform support
