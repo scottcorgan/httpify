@@ -1,6 +1,6 @@
 {
   "name": "httpify",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "A Browserify, Angular bridge for the Request NPM module",
   "main": "index.js",
   "scripts": {
@@ -51,7 +51,7 @@
     "httpify/angular": "request/angular"
   },
   "dependencies": {
-    "reqwest": "^1.1.0",
-    "request": "^2.34.0"
+    "reqwest": "1.1.x",
+    "request": "2.34.x"
   }
 }
