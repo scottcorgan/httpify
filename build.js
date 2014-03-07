@@ -10,5 +10,7 @@ var DIST_FILE = path.resolve(__dirname, './dist/httpify.js');
 console.log('Bundling');
 
 return browserify(ENTRY_FILE)
-  .bundle()
+  .bundle({
+    standalone: 'httpify'
+  })
   .pipe(fs.createWriteStream(DIST_FILE))
