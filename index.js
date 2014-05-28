@@ -13,16 +13,16 @@ module.exports = function (options, callback) {
         return 
       }
       
+      try{
+        response.body = JSON.parse(body);
+      }
+      catch (e) {}
+      
       if (status >= 400 && status < 600) {
         callback(null, response);
         reject(response);
         return
       }
-      
-      try{
-        response.body = JSON.parse(body);
-      }
-      catch (e) {}
       
       callback(null, response);
       resolve(response);
