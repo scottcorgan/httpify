@@ -1,10 +1,10 @@
 {
   "name": "httpify",
-  "version": "0.4.0",
+  "version": "1.0.0",
   "description": "Http in Node and Browserify, simply.",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules/.bin/testling | node_modules/.bin/tspec",
+    "test": "testling | tap-spec",
     "build": "./build.js"
   },
   "repository": {
@@ -18,35 +18,40 @@
     "request",
     "xhr"
   ],
-  "author": "Scott Corgan",
+  "author": {
+    "name": "Scott Corgan"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/scottcorgan/httpify/issues"
   },
   "devDependencies": {
-    "tape": "2.10.x",
-    "testling": "1.6.x",
-    "tap-spec": "0.1.x",
-    "browserify": "3.32.x",
-    "uglify-js": "2.4.x",
-    "sinon": "1.9.x"
+    "browserify": "^6.0.3",
+    "mkdirp": "^0.5.0",
+    "sinon": "^1.10.3",
+    "tap-spec": "^1.0.0",
+    "tape": "^3.0.0",
+    "testling": "^1.7.1",
+    "uglify-js": "^2.4.15"
   },
   "dependencies": {
-    "request": "2.34.x",
-    "xhr": "1.5.x"
+    "promise": "^6.0.0",
+    "request": "^2.44.0",
+    "xhr": "^1.16.1"
   },
   "testling": {
     "files": [
       "test/browser/index.js"
     ],
     "browsers": [
+      "iexplore/11.0",
       "iexplore/10.0",
       "iexplore/9.0",
       "firefox/20..latest",
       "chrome/22..latest",
-      "safari/5.1..latest",
-      "ipad/6.0..latest",
-      "iphone/6.0..latest"
+      "safari/6.0..latest",
+      "ipad/7.0..latest",
+      "iphone/7.0..latest"
     ]
   },
   "browser": {
