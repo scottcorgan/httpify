@@ -19,12 +19,12 @@ module.exports = function (options, callback) {
       catch (e) {}
       
       if (status >= 400 && status < 600) {
-        callback(null, response);
+        callback(null, response, response.body);
         reject(response);
         return
       }
       
-      callback(null, response);
+      callback(null, response, response.body);
       resolve(response);
     });
   });
