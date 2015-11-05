@@ -1,6 +1,6 @@
 {
   "name": "httpify",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Http in Node and Browserify, simply.",
   "main": "index.js",
   "scripts": {
@@ -31,8 +31,7 @@
     "testling": "^1.7.1"
   },
   "dependencies": {
-    "promise": "^7.0.4",
-    "request": "^2.44.0",
+    "request": "^2.65.0",
     "xhr": "^2.1.0"
   },
   "testling": {
